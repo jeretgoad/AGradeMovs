@@ -24,3 +24,13 @@ export const fetchMovies = async  ({ query }: { query: string}) => {
     return data.results;
 }
 
+export const fetchMovieDetails =
+    async (movieId: string): Promise<MovieDetails> => {
+    try {
+
+    } catch (error) {
+        console.log(error);
+        throw error;
+    }
+}
+
