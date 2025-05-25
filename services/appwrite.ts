@@ -62,7 +62,7 @@ export const getTrendingMovies = async(): Promise<TrendingMovie[] | undefined> =
 
         return result.documents as unknown as TrendingMovie[];
     } catch (error) {
-        console.error("Error message:", error);
+        console.error(error);
         return undefined;
     }
 };
